@@ -1,4 +1,27 @@
-# Go + Opengl 2.1 + Shaders + VertexAttribPointer
+# Rendering a cube with Go and OpenGL
+
+aka: Go + Opengl 2.1 + Shaders + VertexAttribPointer
+
+![screen shot](screen.png)
+
+## Introduction
+
+This is a spike showing how to use Golang (1.18) to open a window, render a cube and use vertex and fragment shaders (this makes use of CGO under the hood)
+
+It has only been (slightly) tested on Mac and Linux.
+
+## Usage
+
+- run `go mod tidy`
+- then `make run` or `go run .`
+
+if something goes wrong, you might need to install your systems OpenGL development libraries.
+
+## Blog post
+
+[Post talking about this repo](https://robrohan.com/2018/07/28/go-opengl21-vertexattrib-shaders.html)
+
+## More Info
 
 I haven't been able to find an example of how to do this online anywhere.  There are a few exampls of each part, but nothing that puts them all togther - specfically using the pointer part of _VertexAttribPointer_ with OpenGL 2.1.  Later versions seem to have a nicer way to go about this, but anyone playing around on an older hardware can't use OpenGL 3.3.
 
